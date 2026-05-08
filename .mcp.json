@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dingtalk-summary": {
+      "command": "node",
+      "args": ["~/.codex/skills/dingtalk-chat-summary/applescript-mcp/server.js"]
+    }
+  }
+}

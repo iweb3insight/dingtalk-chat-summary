@@ -1,0 +1,4 @@
+interface:
+  display_name: "DingTalk Chat Summary"
+  short_description: "Operate and summarize DingTalk chats"
+  default_prompt: "Use $dingtalk-chat-summary to operate DingTalk and summarize my chats from the last 7 days."

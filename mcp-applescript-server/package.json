@@ -1,0 +1,15 @@
+{
+  "name": "mcp-applescript-server",
+  "version": "1.0.0",
+  "description": "Minimal MCP server for macOS AppleScript/JXA execution",
+  "main": "index.js",
+  "bin": {
+    "mcp-applescript": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
