@@ -107,8 +107,47 @@ The summary follows this structure:
 - **macOS** — AppleScript automation requires macOS
 - **Node.js** >= 18 — For the MCP server
 - **Python** >= 3.10 — For the chat export preprocessor
-- **Accessibility Permission** — Grant Terminal/Codex accessibility access in System Settings > Privacy & Security > Accessibility
 - **DingTalk Desktop** — Must be installed and logged in
+
+## macOS Permissions (Important)
+
+This skill controls DingTalk desktop via AppleScript. macOS requires granting Codex **Full Disk Access** and **Accessibility** permissions. Without these, the skill cannot read DingTalk window content.
+
+### 1. Accessibility
+
+Allows Codex to control other apps (DingTalk) via AppleScript:
+
+```
+System Settings > Privacy & Security > Accessibility
+```
+
+Click the `+` button and add:
+- **Codex** (ChatGPT Codex desktop app)
+- **Terminal** (if running via terminal)
+
+### 2. Full Disk Access
+
+Allows Codex to read application windows and UI elements:
+
+```
+System Settings > Privacy & Security > Full Disk Access
+```
+
+Click the `+` button and add **Codex**.
+
+### 3. Automation Permission
+
+On first run, macOS will prompt: "Allow Codex to control DingTalk?" — click **Allow**.
+
+To manage manually:
+
+```
+System Settings > Privacy & Security > Automation
+```
+
+Confirm **DingTalk** is checked under Codex.
+
+> ⚠️ You must restart Codex after granting permissions for changes to take effect.
 
 ## License
 
