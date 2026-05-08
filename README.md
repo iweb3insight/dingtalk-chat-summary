@@ -23,11 +23,34 @@
 
 ## 快速安装
 
+### 方式一：GitHub CLI（推荐）
+
 ```bash
-# 克隆到 Codex skills 目录
 gh repo clone iweb3insight/dingtalk-chat-summary ~/.codex/skills/dingtalk-chat-summary
 
-# 安装 MCP 服务器依赖
+cd ~/.codex/skills/dingtalk-chat-summary/applescript-mcp
+npm install
+```
+
+### 方式二：git clone
+
+```bash
+git clone https://github.com/iweb3insight/dingtalk-chat-summary.git ~/.codex/skills/dingtalk-chat-summary
+
+cd ~/.codex/skills/dingtalk-chat-summary/applescript-mcp
+npm install
+```
+
+### 方式三：下载 ZIP
+
+1. 打开 https://github.com/iweb3insight/dingtalk-chat-summary
+2. 点击绿色 **Code** 按钮 → **Download ZIP**
+3. 解压并移动到 Codex skills 目录：
+
+```bash
+unzip dingtalk-chat-summary-main.zip -d /tmp/
+mv /tmp/dingtalk-chat-summary-main ~/.codex/skills/dingtalk-chat-summary
+
 cd ~/.codex/skills/dingtalk-chat-summary/applescript-mcp
 npm install
 ```
